@@ -111,7 +111,7 @@ function renderTodo(row) {
 }
 
 //////////////////
-// Deleting data from a table
+// Deleting data from an Object Store
 //////////////////
 
 html5DB.indexedDB.deleteWishGame = function(id) {
