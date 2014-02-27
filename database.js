@@ -99,8 +99,11 @@ function renderTodo(row) {
   t.data = row.value.text;
   var id = row.key;
 
-  a.textContent = " [Delete]";
+  a.textContent = "[Delete]";
   a.setAttribute("href", "#");
+  a.style.marginLeft = "5px";
+  a.style.color = "Orange";
+  
   li.appendChild(t);
   li.appendChild(a);
   gameList.appendChild(li);

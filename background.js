@@ -2,7 +2,8 @@
 /////// Global Variables ////////
 /////////////////////////////////
 
-var WISHGAMES = new Array("The Political Machine 2012", "Legacy of Kain: Soul Reaver", "Kung Fu Strike - The Warrior's Rise"); // String array TODO: bind with UI
+//var WISHGAMES = new Array("The Political Machine 2012", "Legacy of Kain: Soul Reaver", "Kung Fu Strike - The Warrior's Rise"); // String array TODO: bind with UI
+var WISHGAMES = new Array();
 var GIFTSPERPAGES = 41;      // number of steam gifts per page
 var NUMBEROFPAGES = 3;		 // the number of pages to analyse
 
@@ -21,7 +22,20 @@ document.addEventListener('DOMContentLoaded', function () {
 /////// Primary methods /////////
 /////////////////////////////////
 
+function GetAllWishGames(){
+	var element = document.getElementById("wishGamesItems").getElementsByTagName("li");
+	var stringElement;
+	
+	for (var i = 0; i < element.length; i++){
+		stringElement = element[i].innerText.substring(0, element[i].innerText.length - 8);
+		WISHGAMES.push(stringElement);
+	}
+}
+
 function RequestSteamGifts(){
+	// Get all the games from the list
+	GetAllWishGames();
+	
 	// Connection on the proper website (Page 1)
 	var req = new XMLHttpRequest();
 	req.open("GET", "http://www.steamgifts.com/", true);
