@@ -19,19 +19,21 @@
 	 <script type="text/javascript" src="background.js"></script>
 	 <script type="text/javascript" src="database.js"></script>
   </head>
+  
   <body>
-  
-  <h1>SteamGiftsAuto</h1>
-  
-  <input type="button" value="Start !" id="btn">
-  
-  <ul id="wishGamesItems">
-  </ul>
-  
-  <input id="gameToAdd" type="text" style="width: 200px;" placeholder="Write the game you want"/>
-  </br></br>
-  <input id="btnDB" type="submit" value="Add a game to wish list"/>
-
+	  <h1>SteamGiftsAuto</h1>
+	  
+	  <h3 id="messages"></h3>
+	  
+	  <input type="button" value="Start !" id="btn">
+	  
+	  <ul id="wishGamesItems"></ul>
+	  
+	  <input id="gameToAdd" type="text" style="width: 200px;" placeholder="Write the game you want"/>
+	  </br></br>
+	  <input id="btnDB" type="submit" value="Add a game to wish list"/>
+	  <input type="number" id="nbPage" min="1" max="6" value="1"/>
   </body>
+  
 </html>
 
