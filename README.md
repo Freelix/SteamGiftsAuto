@@ -16,4 +16,4 @@ This is a google chrome extension for selecting games automatically on [SteamGif
 
 ## Newer Version
 
-A newer version is available on this [Gist](https://gist.github.com/Freelix/0eb643a753902026982a). Instead of beiing a chrome extension, it's a script that you can setup to run each few hours to enter giveaways. All you have to do is start this script and check every weeks on the website to know if you won something.
+A newer version is available on this [Gist](https://gist.github.com/Freelix/0eb643a753902026982a). Instead of being a chrome extension, it's a script that you can setup to run each few hours to enter giveaways. All you have to do is start this script and check every weeks on the website to know if you won something.
